@@ -197,7 +197,7 @@ body {
 }
 
 .hero-image {
-    width: 100%;
+    width: 100vw; /* 画面幅に合わせる */
     height: 100%;
     object-fit: cover;
     display: block;
@@ -247,6 +247,27 @@ body {
 
 .hero-btn.show {
     opacity: 1;
+}
+
+/* ===== メディアクエリで文字とボタンを縮小 ===== */
+@media (max-width: 768px) {
+    .hero-h1 {
+        font-size: 2em; /* PCより小さめ */
+        text-align: center;
+    }
+
+    .hero-text {
+        left: 5%;
+        top: 35%;
+        transform: translateY(-50%);
+        width: 90%;
+    }
+
+    .hero-btn {
+        font-size: 1em;
+        padding: 10px 20px;
+        text-align: center;
+    }
 }
 
 /* ===== フッター ===== */
