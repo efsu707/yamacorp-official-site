@@ -185,9 +185,11 @@ body {
 /* ===== Hero セクション ===== */
 .hero {
     position: relative;
-    height: 60vh;
+    width: 100%;
+    height: 100vh; /* 画面全体の高さに合わせる */
     overflow: hidden;
     margin-top: 0;
+
 }
 
 .hero-content {
@@ -197,7 +199,10 @@ body {
 }
 
 .hero-image {
-    width: 100%; /* 画面幅に合わせる */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
@@ -220,6 +225,7 @@ body {
     opacity: 0;
     transform: translateX(-50px);
     transition: all 1s ease;
+    text-align: left;
 }
 
 .hero-btn {
@@ -234,6 +240,7 @@ body {
     text-decoration: none;
     opacity: 0;
     transition: opacity 1s ease;
+    text-align: left;
 }
 
 .hero-btn:hover {
@@ -253,21 +260,17 @@ body {
 /* ===== メディアクエリで文字とボタンを縮小 ===== */
 @media (max-width: 768px) {
     .hero-h1 {
-        font-size: 2em; /* PCより小さめ */
-        text-align: left;
-    }
-
-    .hero-text {
-        left: 5%;
-        top: 35%;
-        transform: translateY(-50%);
-        width: 90%;
+        font-size: 2em;
     }
 
     .hero-btn {
         font-size: 1em;
         padding: 10px 20px;
-        text-align: left;
+    }
+
+    .hero-text {
+        left: 5%;
+        width: 90%;
     }
 }
 
