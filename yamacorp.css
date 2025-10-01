@@ -229,16 +229,15 @@ body {
 .hero-h1 {
     font-size: 3.5em;
     font-weight: bold;
+    color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     opacity: 0;
     transform: translateX(-50px);
     transition: all 1s ease;
-    text-align: left;
+    margin-bottom: 20px;
 }
 
 .hero-btn {
-    display: inline-block;
-    margin-top: 20px;
     background-color: #00754a;
     color: white;
     padding: 15px 30px;
@@ -248,7 +247,6 @@ body {
     text-decoration: none;
     opacity: 0;
     transition: opacity 1s ease;
-    text-align: left;
 }
 
 .hero-btn:hover {
@@ -273,12 +271,14 @@ body {
 
     .hero-btn {
         font-size: 1em;
-        padding: 10px 20px;
+        padding: 12px 24px;
     }
 
-    .hero-text {
-        left: 5%;
-        width: 90%;
+    .hero-content {
+        padding-left: 5%;
+        padding-right: 5%;
+        align-items: center; /* スマホでは中央揃え */
+        text-align: center;
     }
 }
 
