@@ -66,7 +66,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
-    flex-shrink: 0;
+    padding-right: 40px; /* 右寄りを防ぐ */
 }
 
 .line {
@@ -126,8 +126,9 @@ body {
     color: #333;
     font-weight: 500;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.2em;
     transition: color 0.3s;
+    padding: 10px 0;
 }
 
 .side-menu ul li a:hover {
